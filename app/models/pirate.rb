@@ -1,17 +1,17 @@
 class Pirate
   attr_accessor :name, :weight, :height
 
-  pirates = []
+  @@all = []
 
   def initialize(params)
     @name = params[:name]
     @weight = params[:weight]
     @height = params[:height]
-    pirates << self
+    @@all << self
   end
 
   def self.all
-    pirates.clear
+    @@all.clear
   end
 
 end
